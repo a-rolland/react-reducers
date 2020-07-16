@@ -1,9 +1,23 @@
-import React from "react";
+import React, { userReducer } from "react";
+import MainContainer from "./containers/MainContainer"
 
-const App = () => (
-  <div>
-    <h1>Welcome to React</h1>
-  </div>
-);
+const App = () => {
+  return <MainContainer />
+};
 
 export default App;
+
+
+{
+  /* Explication of the structure :
+  <MainCt>
+  <Main>
+    lista de todos
+    <Form>
+      <input></input>
+      <input></input>
+      <buton>Add</buton>
+    </Form>
+  </Main>
+</MainCt>; */
+}
